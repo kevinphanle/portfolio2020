@@ -1,0 +1,89 @@
+// Home
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  // min-width: 100%;
+  position: relative;
+  background: $bg;
+
+  .particles {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    canvas {
+      width: 100%;
+    }
+  }
+
+  .home-content {
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: $lgray;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.1rem;
+    }
+
+    h1 {
+      font-size: 80px;
+      font-weight: 600;
+      color: $white;
+
+      span {
+        color: $highlight;
+      }
+    }
+
+    p {
+      font-size: 25px;
+      line-height: 2rem;
+      color: $lgray;
+      margin: 20px 0;
+    }
+
+    .works-button {
+      text-decoration: none;
+      color: white;
+      border: $lgray 2px solid;
+      width: 200px;
+      padding: 10px 30px;
+      margin: 20px auto;
+      transition: all 0.4s;
+
+      display: flex;
+      justify-content: center;
+
+      animation-delay: 1s;
+
+      span {
+        position: relative;
+        right: -20px;
+        transition: all 0.4s;
+      }
+
+      &:hover {
+        background: $highlight;
+        color: white;
+        border: $highlight 2px solid;
+        cursor: pointer;
+
+        span {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "~animate.css/animate.css";
+@import "./icons";
+@import "./reset";
+@import "./colors";
+
+@import "../components/navbar/navbar.scss";
+@import "../components/home/home.scss";
+@import "../components/about/about.scss";
+@import "../components/work/work.scss";
+@import "../components/footer/footer.scss";
+
+// App
+
+.App {
+  // padding-left: 300px;
+  min-height: 100vh;
+  z-index: 1;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  overscroll-behavior-y: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    /* chrome safari and opera */
+    display: none;
+  }
+}
+
+::-moz-selection {
+  background: $highlight;
+  color: white;
+}
+::selection {
+  background: $highlight;
+  color: white;
+}

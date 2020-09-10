@@ -3,8 +3,8 @@
 // About
 
 .about {
-  color: white;
-  background: black;
+  color: $lgray;
+  background: $darkgray;
   width: 100%;
 
   .about-me {
@@ -54,18 +54,16 @@
 
         &:hover {
           transition: background 0.4s ease;
-          background: #444;
+          background: $lgray;
 
           img {
-            width: 80%;
-            transition: width 0.4s ease;
+            width: 75%;
+            transition: all 0.4s ease;
           }
         }
 
         img {
-          // width: 100%;
           width: 70%;
-          // height: 70%;
         }
       }
 
@@ -78,7 +76,6 @@
         flex-direction: column;
         justify-content: center;
         text-align: left;
-        // padding: 0 15px;
 
         .about-statement {
           font-size: 1.8rem;

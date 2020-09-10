@@ -1,7 +1,7 @@
 // footer
 
 .footer {
-  background: $darkgray;
+  background: $bg;
   width: 100%;
 
   padding: 3rem 0;
@@ -38,11 +38,11 @@
 
   .footer-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 0 auto;
     width: 90%;
     .left {
-      width: 40%;
+      // width: 40%;
       text-align: left;
 
       h3 {
@@ -53,7 +53,7 @@
       .contact {
         margin-top: 0.5rem;
         color: $white;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         font-weight: 300;
 
         .email {

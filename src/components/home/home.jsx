@@ -14,7 +14,7 @@ const Home = (props) => {
         </h1>
         <p>A Full Stack Web Developer.</p>
         <a
-          href="#about"
+          href="#work"
           className="works-button animate__animated animate__pulse"
         >
           View work

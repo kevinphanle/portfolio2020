@@ -28,8 +28,8 @@ function App() {
         <Home />
         <Navbar />
 
-        <About />
         <Work />
+        <About />
 
         <Footer />
       </div>

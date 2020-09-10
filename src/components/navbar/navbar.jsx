@@ -28,10 +28,10 @@ const Navbar = (props) => {
         let workOffsetTop = workEle.getBoundingClientRect().top;
         let workPos = window.scrollY + workOffsetTop - 125;
 
-        if (window.scrollY > workPos) {
-          changeStatus("work");
-        } else if (window.scrollY > aboutPos) {
+        if (window.scrollY > aboutPos) {
           changeStatus("about");
+        } else if (window.scrollY > workPos) {
+          changeStatus("work");
         }
       }
     };
@@ -40,11 +40,6 @@ const Navbar = (props) => {
       document.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  // function statusChange(state) {
-  //   changeStatus(state);
-  //   console.log("state: ", state);
-  // }
 
   let styles = {
     color: "#FCA311",
@@ -65,27 +60,27 @@ const Navbar = (props) => {
             <a
               href="#home"
               className="nav-btn"
-              style={{ color: status === "home" ? styles.color : "white" }}
+              style={{ color: status === "home" ? styles.color : "#494949" }}
             >
               Home
             </a>
           </li>
           <li>
             <a
-              href="#about"
+              href="#work"
               className="nav-btn"
-              style={{ color: status === "about" ? styles.color : "white" }}
+              style={{ color: status === "work" ? styles.color : "#494949" }}
             >
-              About
+              portfolio
             </a>
           </li>
           <li>
             <a
-              href="#work"
+              href="#about"
               className="nav-btn"
-              style={{ color: status === "work" ? styles.color : "white" }}
+              style={{ color: status === "about" ? styles.color : "#494949" }}
             >
-              portfolio
+              About
             </a>
           </li>
 

@@ -9,7 +9,7 @@
 
 .fixed {
   position: sticky !important;
-  background: $darkgray !important;
+  // background: $darkgray !important;
   top: 0;
   left: 0;
   right: 0;
@@ -18,12 +18,13 @@
 
 .navbar {
   background: black;
+  border: none;
   border-bottom: 1px solid $border-light;
   transition: all 0.2s ease;
   width: 100%;
 
   .nav-content {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -65,8 +66,8 @@
       width: 50%;
       display: flex;
       justify-content: space-evenly;
-      border-left: 1px solid $border-light;
-      border-right: 1px solid $border-light;
+      border-left: 1px solid $gray;
+      border-right: 1px solid $gray;
 
       li {
         list-style: none;

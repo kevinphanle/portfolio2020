@@ -45,7 +45,7 @@ const Canvas = (props) => {
 
     const render = () => {
       // c.clearRect(0, 0, canvas.width, canvas.height);
-      c.fillStyle = "rgba(0,0,0, .35)";
+      c.fillStyle = "rgba(0,0,0, .15)";
       // c.fillStyle = "rgba(255,255,255, 0.05)";
       // c.globalAlpha = 0.9;
       c.fillRect(0, 0, canvas.width, canvas.height);
@@ -78,7 +78,7 @@ class Particle {
       50,
       window.innerWidth / 2 + 200
     );
-    this.velocity = 0.003;
+    this.velocity = 0.001;
     this.lastMouse = {
       x: x,
       y: y,

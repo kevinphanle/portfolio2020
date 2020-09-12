@@ -28,8 +28,8 @@ const About = (props) => {
           </div>
           <div className="about-info-container" data-aos="fade-left">
             <p className="about-statement">
-              I am a full stack web developer, leaning more towards the
-              frontend. I have a passion for clean code and pixel perfect
+              I am a <span>full stack web developer</span>, leaning more towards
+              the frontend. I have a passion for clean code and pixel perfect
               design.{" "}
             </p>
 

@@ -42,7 +42,7 @@ const Navbar = (props) => {
   }, []);
 
   let styles = {
-    color: "#FCA311",
+    color: "rgb(125, 255, 255)",
   };
 
   return (

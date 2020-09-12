@@ -9,9 +9,7 @@ const Home = (props) => {
       </div>
       <div className="home-content animate__animated animate__fadeIn">
         <h3>Hello World</h3>
-        <h1>
-          <span className="highlight">Kevin Lê</span>
-        </h1>
+        <h1>Kevin Lê</h1>
         <p>A Full Stack Web Developer.</p>
         <a
           href="#work"

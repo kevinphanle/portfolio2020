@@ -1,10 +1,12 @@
 $bg: #000;
 $header: #14213d;
-$highlight: #fca311;
+$highlight: rgb(125, 255, 255);
 $lgray: #e5e5e5;
 $white: #ffffff;
 
 $border-light: lighten($highlight, 10%);
+$highlight-dark: darken($highlight, 10%);
+$highlight-dark2: darken($highlight, 20%);
 
 $blue: #457b9d;
 $red: #e63946;

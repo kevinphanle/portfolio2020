@@ -15,7 +15,8 @@
   .details {
     width: 70%;
     max-width: 1000px;
-    background: white;
+    background: $lgray;
+    padding: 1rem;
 
     .modal-close-btn {
       position: absolute;
@@ -32,13 +33,17 @@
     }
 
     .details-img {
-      width: 100%;
+      width: 90%;
+      margin: 1rem auto;
+      box-shadow: 10px 10px 45px -23px rgba(0, 0, 0, 0.46);
     }
 
     .info-container {
-      padding: 20px;
+      // padding: 20px;
       text-align: left;
       color: $header;
+      width: 90%;
+      margin: 0 auto;
 
       .details-name {
         font-size: 2rem;
@@ -58,7 +63,7 @@
 
       .details-info {
         .item-desc {
-          color: gray;
+          color: $gray;
           font-weight: 300;
         }
 
@@ -90,13 +95,13 @@
         }
 
         .github-link {
-          background: $lgray;
-          color: black;
+          background: transparent;
+          color: $gray;
 
           &:hover {
-            background: white;
-            color: $lgray;
-            border: 2px solid $lgray;
+            // background: white;
+            color: $white;
+            // border: 2px solid $lgray;
           }
         }
 
@@ -111,9 +116,9 @@
           }
 
           &:hover {
-            background: white;
-            color: $highlight;
-            border: 2px solid $highlight;
+            background: $highlight-dark2;
+            color: $white;
+            border: 2px solid $highlight-dark2;
           }
         }
       }

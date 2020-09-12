@@ -1,11 +1,9 @@
-import React, { useState, useRef } from "react";
-import { CSSTransition } from "react-transition-group";
+import React, { useState } from "react";
 
 const WorkListItem = (props) => {
   const item = props.item;
 
   const [overlayStatus, showOverlay] = useState(false);
-  const nodeRef = useRef(null);
 
   const handleClick = () => {
     props.callback(props.index);

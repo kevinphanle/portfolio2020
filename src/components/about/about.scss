@@ -6,11 +6,11 @@
   color: $lgray;
   background: $darkgray;
   width: 100%;
+  padding: 8rem 0;
 
   .about-me {
     margin: 0 auto;
-    padding: 8rem 0;
-    width: 90%;
+    width: 80%;
     text-align: center;
 
     h1 {
@@ -41,20 +41,21 @@
 
     .about-container {
       display: flex;
+      justify-content: center;
       margin: 50px 0;
 
       .about-img {
         width: 100%;
         max-width: 624px;
         // max-height: 570px;
-        background: $highlight;
+        background: $lgray;
         display: flex;
         justify-content: center;
         align-items: center;
 
         &:hover {
           transition: background 0.4s ease;
-          background: $lgray;
+          background: $highlight;
 
           img {
             width: 75%;
@@ -83,6 +84,10 @@
           font-weight: 300;
           letter-spacing: normal;
           line-height: 2rem;
+
+          span {
+            color: $highlight;
+          }
         }
 
         .about-bio {
